@@ -1,0 +1,155 @@
+﻿.Content {
+    box-sizing: border-box;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 30px 56px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.SearchBar {
+    box-sizing: border-box;
+    width: 100vw;
+    background: #0064EB;
+
+}
+
+.SearchBar>.wrapper {
+    box-sizing: border-box;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 16px 33px;
+}
+
+.SearchBar .logo {
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.SearchBar .searchInput {
+    box-sizing: border-box;
+    position: relative;
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 44px;
+
+    background-image: url('../search.svg');
+    background-repeat: no-repeat;
+    background-position: 19px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.Content .loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.StartPage,
+.UserNotFound {
+    margin: 190px auto 0;
+}
+
+.StartPage .StartSearchingIcon,
+.UserNotFound .UserNotFoundIcon {
+    display: block;
+    margin: 0 auto 46px;
+}
+
+.StartPage .StartSearchingText,
+.UserNotFound .UserNotFoundText {
+    max-width: 210px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: #808080;
+
+}
+
+@media (max-width: 670px) {
+    .Content {
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+
+    .SearchBar .searchInput {
+        width: 80%;
+        height: 32px;
+        background-position: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .StartPage,
+    .UserNotFound {
+        margin: 50% auto 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .SearchBar>.wrapper {
+        padding: 10px 20px;
+    }
+}
+
+
+
+@media (max-width: 860px) and (orientation: landscape) {
+
+    .StartPage,
+    .UserNotFound {
+        margin: 10% auto 0;
+    }
+
+    .StartPage .StartSearchingIcon,
+    .UserNotFound .UserNotFoundIcon {
+        margin: 0 auto 20px;
+    }
+}

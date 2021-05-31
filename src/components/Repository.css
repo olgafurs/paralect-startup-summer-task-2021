@@ -1,0 +1,50 @@
+﻿.Repository {
+    margin: 0 auto 24px;
+    padding: 24px 32px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+.Repository .wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.Repository .name {
+    display: block;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #0064EB;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Repository .describe {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+@media (max-width: 670px) {
+    .Repository {
+        padding: 16px 24px;
+        margin: 0 auto 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .Repository .name {
+        font-size: 18px;
+    }
+
+    .Repository .describe {
+        font-size: 14px;
+    }
+}

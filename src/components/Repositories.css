@@ -1,0 +1,126 @@
+﻿.Repositories {
+  width: 70%;
+  margin-left: 85px;
+}
+
+.Repositories .wrapper {
+  margin: 0 auto;
+}
+
+.Repositories .EmptyRepositoryListIcon {
+  display: block;
+  margin: 191px auto 50px;
+}
+
+
+.Repositories .EmptyRepositoryListText {
+  margin: 0 auto;
+  max-width: 245px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+  color: #808080;
+}
+
+.Repositories .number {
+  margin: 0 0 29px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.Paginate {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NumberItems {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+  margin-right: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  cursor: pointer;
+}
+
+.pagination a {
+  padding: 6px;
+  border-radius: 3px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: #0064EB;  
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);  
+}
+
+@media (max-width: 760px) {
+  .Repositories {
+    width: 70%;
+    margin-left: 40px;
+  }
+
+}
+
+@media (max-width: 670px) {
+  .Repositories {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .Repositories .number {
+    margin: 0 0 20px;
+    font-size: 24px;
+
+  }
+
+  .Repositories .EmptyRepositoryListIcon {
+    margin: 100px auto 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Paginate {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .NumberItems {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+}

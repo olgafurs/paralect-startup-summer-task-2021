@@ -1,0 +1,116 @@
+﻿.UserCard .wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+.UserCard .avatar {
+    display: block;
+    margin-bottom: 28px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+
+.UserCard .name {
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.UserCard .login {
+    margin-bottom: 34px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #0064EB;
+}
+
+.UserCard .followersFollowing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.UserCard .followers {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.UserCard .following {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+
+}
+
+@media (max-width: 760px) {
+    .UserCard .avatar {
+        margin-bottom: 28px;
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 670px) {
+    .UserCard .name {
+        font-size: 24px;
+    }
+
+    .UserCard .login {
+        margin-bottom: 20px;
+    }
+
+    .UserCard .followersFollowing {
+        justify-content: flex-start;
+    }
+
+    .UserCard .followers {
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .UserCard .avatar {
+        margin: 0 auto 28px;
+    }
+
+    .UserCard .name {
+        text-align: center;
+    }
+
+    .UserCard .login {
+        text-align: center;
+    }
+
+    .UserCard .followersFollowing {
+        justify-content: space-around;
+    }
+
+    .UserCard .followers {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .UserCard .followersFollowing {
+        text-align: center;
+    }
+
+}
